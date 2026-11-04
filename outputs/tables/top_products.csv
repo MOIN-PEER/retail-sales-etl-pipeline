@@ -1,0 +1,11 @@
+product_code,product_name,category,units_sold,net_revenue_gbp
+P0002,Bluetooth Speaker,Electronics,3410,320060.09
+P0010,Keyboard,Electronics,3432,314632.36
+P0004,Smart Watch,Electronics,3376,285967.65
+P0001,Wireless Earbuds,Electronics,3289,283594.82
+P0007,Laptop Stand,Electronics,3330,242666.88
+P0009,Gaming Mouse,Electronics,3320,215603.05
+P0023,Frying Pan,Kitchen,3312,199519.57
+P0027,Mixing Bowl Set,Kitchen,3297,189192.93
+P0037,Scarf,Clothing,3284,180177.83
+P0008,HD Webcam,Electronics,3309,177325.36

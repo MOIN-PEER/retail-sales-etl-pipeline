@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.pytest_cache/
+
+# Local config and secrets
+.env
+
+# Generated data (re-create with: python -m retail_etl all)
+data/raw/*.csv
+data/processed/*.csv
+data/*.db
+logs/*.log*
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

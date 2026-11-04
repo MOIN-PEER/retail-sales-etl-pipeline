@@ -1,0 +1,18 @@
+{
+  "run_id": "20261030_192704_aa9e82",
+  "rows_extracted": 110076,
+  "duplicates_removed": 1086,
+  "rows_rejected": 2457,
+  "reject_rate_pct": 2.23,
+  "rows_loaded": 106533,
+  "net_revenue_gbp": 6936801.82,
+  "gross_margin_gbp": 2416756.09,
+  "gross_margin_pct": 34.8,
+  "transactions": 106533,
+  "avg_transaction_gbp": 65.11,
+  "best_month": "December",
+  "best_month_share_pct": 13.0,
+  "top_store": "London Oxford St",
+  "top_category": "Electronics",
+  "runtime_seconds": 5.34
+}

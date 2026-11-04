@@ -1,0 +1,12 @@
+flowchart LR
+    A["Raw CSV exports<br/>data/raw/<br/>sales_YYYY_MM.csv<br/>products.csv, stores.csv"] --> B["EXTRACT<br/>read as text<br/>schema check<br/>retry on I/O errors"]
+    B --> C["VALIDATE<br/>de-duplicate<br/>7 data-quality rules<br/>reject-rate threshold"]
+    C -->|bad rows + reason| Q[("dq_rejected_sales<br/>quarantine table")]
+    C -->|clean rows| D["TRANSFORM<br/>standardise text<br/>calculate amounts & margin<br/>build star schema"]
+    D --> E["LOAD<br/>single transaction<br/>full refresh<br/>reconciliation check"]
+    E --> W[("Warehouse<br/>SQLite or PostgreSQL<br/>dim_date, dim_store,<br/>dim_product, fact_sales")]
+    W --> R["REPORT<br/>SQL analytics<br/>charts, KPI JSON,<br/>data-quality report"]
+    E --> L[("etl_run_log<br/>audit table")]
+    style C fill:#fde9d9,stroke:#c55a11
+    style W fill:#deebf7,stroke:#1f4e79
+    style Q fill:#fde9d9,stroke:#c55a11

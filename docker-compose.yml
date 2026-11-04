@@ -1,0 +1,17 @@
+# Optional: local PostgreSQL for running the pipeline against a "real" warehouse.
+#   docker compose up -d
+#   set DATABASE_URL in .env to the PostgreSQL line in .env.example
+services:
+  postgres:
+    image: postgres:16
+    container_name: retail_dw_postgres
+    environment:
+      POSTGRES_USER: etl_user
+      POSTGRES_PASSWORD: etl_password
+      POSTGRES_DB: retail_dw
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+volumes:
+  pgdata:

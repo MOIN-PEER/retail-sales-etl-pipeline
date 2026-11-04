@@ -1,0 +1,37 @@
+erDiagram
+    FACT_SALES }o--|| DIM_DATE : date_key
+    FACT_SALES }o--|| DIM_STORE : store_key
+    FACT_SALES }o--|| DIM_PRODUCT : product_key
+    FACT_SALES {
+        varchar transaction_id PK
+        int date_key FK
+        int store_key FK
+        int product_key FK
+        int quantity
+        numeric net_amount_gbp
+        numeric gross_margin_gbp
+        varchar channel
+        varchar payment_method
+    }
+    DIM_DATE {
+        int date_key PK
+        date full_date
+        int month
+        int quarter
+        boolean is_weekend
+    }
+    DIM_STORE {
+        int store_key PK
+        varchar store_id
+        varchar store_name
+        varchar city
+        varchar region
+    }
+    DIM_PRODUCT {
+        int product_key PK
+        varchar product_code
+        varchar product_name
+        varchar category
+        numeric unit_price_gbp
+        numeric unit_cost_gbp
+    }

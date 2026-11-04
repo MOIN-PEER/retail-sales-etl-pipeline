@@ -1,0 +1,12 @@
+# Runtime dependencies
+numpy>=1.26
+pandas>=2.1
+SQLAlchemy>=2.0
+matplotlib>=3.8
+python-dotenv>=1.0
+
+# Optional: only needed if you point DATABASE_URL at PostgreSQL
+psycopg2-binary>=2.9
+
+# Development / testing
+pytest>=8.0

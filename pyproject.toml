@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "retail-sales-etl-pipeline"
+version = "1.0.0"
+description = "End-to-end ETL pipeline: raw retail sales CSVs -> validated star-schema data warehouse -> analytics"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Mohamed Moin Peer" }]
+dependencies = [
+    "numpy>=1.26",
+    "pandas>=2.1",
+    "SQLAlchemy>=2.0",
+    "matplotlib>=3.8",
+    "python-dotenv>=1.0",
+]
+
+[project.optional-dependencies]
+postgres = ["psycopg2-binary>=2.9"]
+dev = ["pytest>=8.0"]
+
+[project.scripts]
+retail-etl = "retail_etl.__main__:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"

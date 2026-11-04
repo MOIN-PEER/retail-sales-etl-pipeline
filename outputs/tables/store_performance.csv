@@ -1,0 +1,13 @@
+store_id,store_name,region,transactions,net_revenue_gbp,avg_transaction_gbp,gross_margin_gbp
+S010,London Oxford St,London,13252,872493.22,65.84,302421.55
+S001,Belfast City Centre,Northern Ireland,10888,710500.47,65.26,248183.22
+S006,Manchester Arndale,North West,10385,660415.63,63.59,229826.0
+S004,Glasgow Buchanan St,Scotland,10105,659213.41,65.24,229858.86
+S009,Birmingham Bullring,West Midlands,9432,602857.09,63.92,210121.69
+S005,Edinburgh Princes St,Scotland,9026,594882.97,65.91,208065.05
+S007,Liverpool One,North West,8373,546511.67,65.27,190584.36
+S008,Leeds Trinity,Yorkshire,7967,527507.78,66.21,183929.62
+S002,Lisburn Retail Park,Northern Ireland,7426,488144.73,65.73,170887.62
+S011,Bristol Cabot Circus,South West,6857,442102.48,64.47,153632.45
+S012,Cardiff St Davids,Wales,6655,432301.44,64.96,151204.5
+S003,Newry Quays,Northern Ireland,6167,399870.93,64.84,138041.17

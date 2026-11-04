@@ -1,0 +1,9 @@
+channel,payment_method,transactions,net_revenue_gbp
+in_store,card,39987,2611107.32
+click_and_collect,card,13467,870992.93
+in_store,gift_card,13232,870815.63
+in_store,contactless,13383,862205.0
+in_store,cash,13160,850616.49
+click_and_collect,cash,4357,291251.19
+click_and_collect,contactless,4511,290302.3
+click_and_collect,gift_card,4436,289510.96
